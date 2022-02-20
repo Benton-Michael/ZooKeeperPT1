@@ -1,15 +1,13 @@
 public class Mammal {
-    protected int energyLevel;
+    protected int energyLevel = 100;
+    
+    // Method: displayEnergy
+    public int displayEnergy() {
+        System.out.println("The Energy level is: " + energyLevel);
+        return energyLevel;
+    }
 
-    // constructor
     public Mammal(int energyLevel) {
         this.energyLevel = energyLevel;
     }
-    // Method: displayEnergy
-    public int displayEnergy() {
-        System.out.println("The mammal's energy level is " + this.energyLevel);
-        return this.energyLevel;
-    }
-
-    
 }
